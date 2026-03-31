@@ -1,46 +1,45 @@
 # RobertsRobotBar Prototype
 
-Dette projekt er en tidlig prototype af et system til at styre en Universal Robots robotarm til at mixe drinks.
+This project is an early prototype of a system for controlling a Universal Robots robotic arm to mix drinks.
 
-Formålet med prototypen var at etablere en simpel løsning til kommunikation med robotten og afvikling af drink-scripts.
-Projektet blev anvendt i praksis i forbindelse med Tønder Festival.
-
----
-
-## Funktionalitet
-
-* Kommunikation med robotten via TCP
-* Afvikling af scripts til drink-mixing
-* Simpel brugerflade til valg af drinks
-* REST API som bindeled mellem frontend og robot
+The purpose of the prototype was to establish a simple solution for communicating with the robot and executing drink scripts.
+The project was used in practice during Tønder Festival.
 
 ---
 
-## Teknologi
+## Functionality
+
+* Communication with the robot via TCP
+* Execution of scripts for drink mixing
+* Simple user interface for selecting drinks
+* REST API acting as a link between frontend and robot
+
+---
+
+## Technology
 
 * Python
 * Flask (REST API)
 * HTML frontend
 * SQLite database
-* TCP kommunikation til robot
+* TCP communication with the robot
 
 ---
 
-## Arkitektur
+## Architecture
 
 ### Frontend
 
-* Implementeret i HTML
-* Kommunikerer med backend via HTTP requests
+* Implemented in HTML
+* Communicates with the backend via HTTP requests
 
 ### Backend
 
-* Opbygget som en REST API i Flask
-* Modtager requests fra frontend
-* Sender kommandoer til robotten via TCP
-* Håndterer simpel logik for sekventiel afvikling af scripts
+* Built as a REST API using Flask
+* Receives requests from the frontend
+* Sends commands to the robot via TCP
+* Handles simple logic for sequential execution of scripts
 
 ### Database
 
-* SQLite anvendt til lagring af opskrifter og konfiguration
-
+* SQLite used for storing recipes and configuration
